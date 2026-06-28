@@ -76,18 +76,14 @@ if (menuBlaze) {
         // Redireciona para a página da Blaze/sinais
         window.location.href = 'ia-hacker/index.html';
     });
+    
 }
-
-if (menuJonbet) {
-    menuJonbet.addEventListener('click', function(e) {
+if (menuBlaze) {
+    menuBlaze.addEventListener('click', function(e) {
         e.preventDefault();
         closeMenu();
-        const codigo = accessCodeInput ? accessCodeInput.value : '';
-        if (validateAccess(codigo)) {
-            openIframe(URL_JONBET);
-        } else {
-            showError('❌ Digite o código de acesso primeiro!');
-        }
+        // Redireciona para a página da Blaze/sinais
+        window.location.href = 'ia-hacker/index.html';
     });
 }
 
